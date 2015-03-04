@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Library</string>
+    <string name="app_version">V 1.0</string>
+    <string name="copy_right">Copyright 2014—2015 Booch. All Rights Reserved.</string>
+    <string name="about_booch">关于Booch</string>
+    <string name="declare">声明</string>
+    <string name="action_exit">退出</string>
+    <string name="action_about">关于软件</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">MainActivity</string>
+    <string name="search_hint">输入查询关键字</string>
+    <string name="s0">不限</string>
+    <string name="s1">书名</string>
+    <string name="s2">作者</string>
+    <string name="s3">出版社</string>
+    <string name="s4">IBSN</string>
+
+    <!-- book item -->
+    <string name="bookcover">cover</string>
+    <string name="detail">详细信息</string>
+
+    <!-- login view -->
+    <string name="user_name_hint">用户名</string>
+    <string name="psw_hint">密码</string>
+    <string name="submit">登录</string>
+
+    <!-- main str -->
+    <string name="result_info">信息</string>
+    <string name="previous">前一页</string>
+    <string name="next">后一页</string>
+    <string name="no_found">抱歉，未找到相关数据</string>
+    <!-- drawer view -->
+    <string name="btn_login">登录</string>
+    <string name="personalcenter">个人中心</string>
+    <string name="manager">图书管理</string>
+    <string name="remind">定时提醒</string>
+    <string name="changePassword">修改密码</string>
+    <string name="changeInfo">个人信息</string>
+    <string name="permission">借阅权限</string>
+    <string name="book_shelf">我的书架</string>
+    <string name="book_remind">我的提醒</string>
+    
+
+    <!-- book detail -->
+    <string name="hold">馆藏信息</string>
+    <string name="ibsn">条形码</string>
+    <string name="location">馆藏地</string>
+    <string name="state">馆藏状态</string>
+    <string name="date_out">借出日期</string>
+    <string name="date_back">归还日期</string>
+    <string name="put">放入书架</string>
+    <string name="buy">购买此书</string>
+
+    <!-- user info -->
+    <string name="log_id">登录名</string>
+    <string name="log_num">读者证号</string>
+    <string name="log_name">姓名</string>
+    <string name="log_ID">身份证号</string>
+    <string name="log_state">证状态</string>
+    <string name="log_date">有效日期</string>
+    <string name="log_com">工作单位</string>
+    <string name="log_home">家庭地址</string>
+    <string name="log_em">Email</string>
+    <string name="log_phone">电话号码</string>
+    <string name="log_pwd">密码</string>
+
+    <!-- change pwd -->
+    <string name="cha_op">请输入原密码</string>
+    <string name="cha_np">请输入新密码</string>
+    <string name="cha_renp">请确认新密码</string>
+    <string name="cha_confirm">确认</string>
+
+    <!-- about booch -->
+    <string name="booch">	    团队名:Booch\n所属单位:中南大学软件学院1205班\n团队成员:\n队长:聂佳俊\n队员:谢明添,周博宇,钟振邦,代惠敏,刘健\n</string>
+    <string name="declare_detail">声明:\n本软件属于Booch团队所有.\n本软件提供安卓手机端的中南大学网上图书馆服务入口,一切数据以中南大学网上图书馆为准.\n详情访问：http://opac.its.csu.edu.cn</string>
+    <string name="permission_detail">	  	网上服务\n
+		允许网上续借	\n
+		普通外借服务\n
+		最大借数：5 最大租数：0 最大租数：0 最大租数：0 \n
+		可借[中文科技]\n
+
+		规则[0004 5本63天] 可借数[5] 可租数[0] 可借天数[0——63]每小时租金[0 续次[1] 续期[63]\n
+
+		可借[中文社科]\n
+		规则[0004 5本63天] 可借数[5] 可租数[0] 可借天数[0——63]每小时租金[0 续次[1] 续期[63]\n
+
+		可借[小说]\n
+		规则[0004 5本63天] 可借数[5] 可租数[0] 可借天数[0——63]每小时租金[0 续次[1] 续期[63]\n
+
+		可借[三校借书证]\n
+		规则[0008 1本32天] 可借数[1] 可租数[0] 可借天数[0——32]每小时租金[0 续次[0] 续期[0]\n
+
+		可借[外文图书]\n
+		规则[0004 5本63天] 可借数[5] 可租数[0] 可借天数[0——63]每小时租金[0 续次[1] 续期[63]\n
+
+		可借[中文期刊]\n
+		规则[0004 5本63天] 可借数[5] 可租数[0] 可借天数[0——63]每小时租金[0 续次[1] 续期[63]\n
+
+		可借[外文期刊]\n
+		规则[0002 2本63天] 可借数[2] 可租数[0] 可借天数[0——63]当天起每日租金[0] 续次[1] 续期[63]\n
+		专项服务:\n
+		检索室\n
+
+		馆际互借服务:</string>
+    <string name="title_activity_remind_timing">RemindTimingActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

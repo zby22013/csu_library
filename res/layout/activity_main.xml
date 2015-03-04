@@ -1,0 +1,186 @@
+<android.support.v4.widget.DrawerLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/drawer_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<!--The main content view -->
+
+   <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+
+     <RelativeLayout
+         android:layout_width="fill_parent"
+    	 android:layout_height="70dp"
+    	 android:background="@drawable/banner">
+    	 
+         <!-- xmt add 20140328 21:44 -->
+           <ImageButton 
+             android:id="@+id/btn_openDrawer"
+             android:layout_width="wrap_content"
+       	 	 android:layout_height="wrap_content"
+       	 	 android:contentDescription="@string/hello_world"
+       	 	 android:src="@drawable/open_drawer_btn_style"
+       	 	 android:layout_centerVertical="true"
+       	 	 android:background="#00000000"
+       	 	 android:paddingLeft="5dp"
+       	 	 android:paddingRight="5dp"
+             />
+         <!-- add end -->
+
+           <!-- <Button
+               android:id="@+id/btn_setting"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/setting_btn_style" /> -->
+
+    	</RelativeLayout>
+    	
+    <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/edt_Search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btn_Search"
+        android:ems="10"
+        android:hint="@string/search_hint"
+        android:src="@drawable/search3"
+         >
+        
+    </EditText>
+    
+    <ImageButton
+        android:id="@+id/btn_Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/search1" 
+       	android:layout_alignBottom="@+id/edt_Search"
+        />
+    <HorizontalScrollView
+        android:id="@+id/type_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_Search">
+    <RadioGroup 
+        android:id="@+id/rbtn_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+      
+        <RadioButton 
+           android:id="@+id/rbtn_type_all"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/s0"/>
+        <RadioButton 
+           android:id="@+id/rbtn_type_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/s1"/>
+         
+         <RadioButton 
+           android:id="@+id/rbtn_type_author"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/s2"/>
+
+         <RadioButton
+             android:id="@+id/rbtn_type_publisher"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/s3" />
+
+          <RadioButton 
+            android:id="@+id/rbtn_type_ibsn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/s4"/>
+          
+
+    </RadioGroup>
+    </HorizontalScrollView>
+
+	
+    <TextView
+        android:id="@+id/txt_no_found"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_found"
+        android:visibility="gone"
+        />
+    <ListView
+	    android:id="@+id/book_list_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_below="@+id/type_select"
+	    android:layout_above="@+id/ctr_panel"
+	    android:dividerHeight="5dp"
+	    
+	    />
+    <RelativeLayout
+        android:id="@+id/ctr_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/result_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/result_info"
+            android:layout_centerVertical="true"
+             />
+
+	    <Button
+	        android:id="@+id/btn_previous"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/btn_next"
+	        android:background="@drawable/lastpage_btn_style"
+	        android:layout_marginRight="5dp"
+	        />
+	        
+	    <Button 
+	        android:id="@+id/btn_next"
+	        android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+	        android:layout_marginRight="5dp"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/nextpage_btn_style"
+	        />
+    </RelativeLayout>
+	    
+	    
+	</RelativeLayout>
+	</LinearLayout>
+
+    <!--The navigation drawer -->
+    <ListView
+		android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:background="#18a8dd"
+        android:dividerHeight="0dp"/>
+
+</android.support.v4.widget.DrawerLayout>

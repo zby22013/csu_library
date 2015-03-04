@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   	<RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起止日期"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/date_start"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10" 
+            android:layout_toRightOf="@+id/txt_date"
+            android:layout_centerVertical="true"
+            android:hint="8位日期"
+            android:inputType="date"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="—" 
+            android:layout_toRightOf="@+id/date_start"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/date_end"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="8位日期"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:inputType="date"
+             />
+
+        <ImageButton
+            android:id="@+id/his_search"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/search1"
+            android:contentDescription="@string/hello_world"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <TableLayout
+        android:id="@+id/his_info_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:background="#18a8dd"
+            >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="操作类型"
+                android:textColor="#ffffff"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="操作日期"
+                android:textColor="#ffffff"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="题名" 
+                android:textColor="#ffffff"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="索取号"
+                android:textColor="#ffffff"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="条码号"
+                android:textColor="#ffffff"
+                android:layout_weight="1" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>
+</LinearLayout>

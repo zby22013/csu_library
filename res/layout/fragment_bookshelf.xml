@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#e4ecef">
+    
+	<TextView 
+        android:id="@+id/txt_b"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/book_shelf"
+    	android:textSize="30sp"
+    	android:layout_centerHorizontal="true"
+    	/>
+	<ProgressBar
+	    android:id="@+id/proBar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true" />
+	<ListView
+	    android:layout_below="@+id/txt_b"
+        android:id="@+id/book_shelf_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+        android:dividerHeight="5dp">
+    </ListView>
+
+	
+    
+</RelativeLayout>

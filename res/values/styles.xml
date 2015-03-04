@@ -1,0 +1,27 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="BaseAppTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        All customizations that are NOT specific to a particular API-level can go here.
+    </style>
+    
+    <!--  <style name="CustomTheme" parent="android:style/Theme.Holo.Light">
+        <item name="android:actionBarTabStyle">@style/MyActionBarTabStyle</item>
+    </style>-->
+    
+    <!--  <style name="MyActionBarTabStyle" parent="android:style/Widget.Holo.Light.ActionBar.TabView">
+	  	<item name="android:background">@drawable/actionbar_tab_bg</item>
+  	</style>-->
+</resources>

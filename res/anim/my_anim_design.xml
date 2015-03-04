@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:shareInterpolator="true" > <!-- android:fillAfter改为false就会使动画结束后，返回动画前的画面。 -->
+    <!-- 设置渐现效果 -->
+    <alpha
+        android:duration="3000"
+        android:fromAlpha="0.0"
+        android:repeatCount="0"
+        android:toAlpha="1.0" />
+    <!-- 设置由小变大效果 -->
+    <scale
+        android:duration="2000"
+        android:fromXScale="0.5"
+        android:fromYScale="0.5"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+
+</set>
